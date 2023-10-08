@@ -1,0 +1,15 @@
+<section>
+  <h2>Quotes</h2>
+  <ul>
+    <li *ngFor="let quote of quotes">
+      <h3>{{ quote.author }}</h3>
+      <p>{{ quote.quote }}</p>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Add quote</h2>
+  <input [(ngModel)]="newQuote" />
+  <button (click)="addQuote()">Add</button>
+</section>
